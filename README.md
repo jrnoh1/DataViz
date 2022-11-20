@@ -1,0 +1,22 @@
+# DataViz
+
+I wanted to explore the different criterias that make a country happy or not. This analysis can help countries that may not know the reason for their citizens being unhappy with their countries and also help the countries by showing them the balance between the different criterias and further improve on those criterias that may need improvements. 
+
+Data Preparation:
+If you take a look at the dataset for 2020-2021, the column names and the number of columns available are different from the datasets for 2015-2019. Because of the differing number of columns and the names, I had to explore the dataset to union these three datasets into one standardized format. After I cleaned up the data, I was able to make the following charts. However, some of the countries are missing in the 2020 and 2021 dataset, so a future improvement with this dataset can be to find a more suitable dataset that can capture the entirety of Africa and Asia would be a good step for improving this analysis.
+My finalized dataset included 11 columns: country name, regions, rankings of the happiness score, happiness score (float), GDP, Social support, Health/Life expectancy, Generosity, Trust in the Government, and the year of when the dataset was collected (2015-2021)
+
+1st bar graph chart (top left):
+I made this chart to showcase the top 10 countries with the highest happiness score. Not only did I include the top10 but I also included the bottom 10 to help the audience compare and contrast the different countries that are doing the best compared to the worst. I included different hues of color to showcase the highest happiness score out of the ones displayed is the darkest hue and the ones with the lower happiness score had less intensified color hues.
+
+Correlation Plot (top right)
+I constructed this chart using parameters and created a calculation field for the audience to be able to interact with the visualization and select their desired metric. After creating the parameter and the new filters, I added a linear regression line to find the trends. The correlation between the happiness scores and the chosen metric showed an increasing trend for all plots, which indicated that there was a trend of countries being happier with more freedom in their country, social support from their families, and higher life expectancy (in years) due to better technology, better hospitals, etc. I set another separate filter for this plot because I thought it would be better for users to choose their desired country but also compare it with the whole world (or whatever region/country they chose). I also made the countries have different colors to help users see that those are different points and to decrease confusion with the visualization.
+
+Map plot (Bottom Left)
+This was originally supposed to be the first plot that the user was supposed to see, but after constructing the dashboard I decided to put it at the bottom because the main purpose of this data visualization was to find what makes a country happy and the different countries’ happiness score compared to others. However, I believe the map plot is an informative component that completes our data visualization dashboard. The map plot’s purpose is for audiences to select specific countries as they are presented with the dashboard, and allow the users to see the happiness score, the country’s name, and its associated region. I put the happiness score in a one color with different intensities/hues since we are dealing with one type of category (happiness score), and this would help the user in a high-level manner. Possibly they would want to compare different countries’ happiness scores, then the map plot allows the user to select their desired countries and see their happiness scores and where that country stands in the correlation plot. Not only are you able to select these countries and compare them with others but also the user can go into detail about the country they are most curious about which leads us to the Web Page Object.
+
+Web Page Object (Bottom right):
+The web page object’s purpose is simple. It gives a detailed summary using Wikipedia pages based on the country that the user chooses from the map plot to gain a better understanding of the country and find what components make or break the happiness scores.
+
+
+Tableau Public link: https://public.tableau.com/app/profile/jr.noh/viz/DataViz_Tableau_Hw2/Dashboard1?publish=yes 
